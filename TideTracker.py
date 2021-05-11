@@ -316,12 +316,12 @@ while True:
     wl_error = True
     while wl_error == True:
         try:
-            WaterLevel = TD.past24(StationID)
+            WaterLevel = past24(StationID)
             wl_error = False
         except:
             display_error('Tide Data')
 
-    TD.plotTide(WaterLevel)
+    plotTide(WaterLevel)
 
 
     # Open template file
@@ -404,7 +404,7 @@ while True:
     hilo_error = True
     while hilo_error == True:
         try:
-            hilo_daily = TD.HiLo(StationID)
+            hilo_daily = HiLo(StationID)
             hilo_error = False
         except:
             display_error('Tide Prediction')
