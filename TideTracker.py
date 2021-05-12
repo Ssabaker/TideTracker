@@ -39,8 +39,8 @@ Location specific info required
 
 # Optional, name of condo?
 LOCATION = ''
-# NOAA Station Code for Tide Data
-WellsME = ########
+# NOAA Station Code for tide data
+StationID = #######
 
 # For weather data
 # Create Account on openweathermap.com and get API key
@@ -53,9 +53,6 @@ UNITS = 'imperial'
 # Create URL for API call
 BASE_URL = 'http://api.openweathermap.org/data/2.5/onecall?'
 URL = BASE_URL + 'lat=' + LATITUDE + '&lon=' + LONGITUDE + '&units=' + UNITS +'&appid=' + API_KEY
-
-# NOAA Station Code for tide data
-StationID = #######
 
 
 '''
