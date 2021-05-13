@@ -37,7 +37,7 @@ Location specific info required
 ****************************************************************
 '''
 
-# Optional, name of condo?
+# Optional, displayed on top left
 LOCATION = ''
 # NOAA Station Code for tide data
 StationID = #######
@@ -247,7 +247,6 @@ while True:
     report = weather[0]['description']
     # get icon url
     icon_code = weather[0]['icon']
-    #icon_URL = 'http://openweathermap.org/img/wn/'+ icon_code +'@4x.png'
 
     # get daily dict block
     daily = data['daily']
@@ -380,9 +379,6 @@ while True:
     ## Dividing lines
     draw.line((400,10,400,220), fill='black', width=3)
     draw.line((600,20,600,210), fill='black', width=2)
-
-    #h = 240
-    #draw.line((25, h, 775, h), fill='black', width=3)
 
 
     # Tide Info
